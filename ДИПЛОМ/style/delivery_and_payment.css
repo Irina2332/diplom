@@ -1,0 +1,45 @@
+.dostavka,
+.sbor,
+.dostavka_zab,
+.samov {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.line {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  height: 0px;
+  margin-bottom: 10px;
+}
+
+.payment,
+.city {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.payment img {
+  margin-left: 20px;
+  width: 60px;
+  height: 40px;
+}
+
+.payment__li {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.city p {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,54 @@
+.range-slider {
+  text-align: center;
+}
+#products-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-product {
+  flex: 0 0 24%;
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.categories {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+label[for="category1"],
+[for="category2"],
+[for="category3"],
+[for="category4"],
+[for="category5"],
+[for="category6"],
+[for="category7"],
+[for="category8"],
+[for="category9"],
+[for="category10"],
+[for="category11"] {
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.categories a:hover {
+  text-decoration: none;
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
