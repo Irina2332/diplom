@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
+body {
+  width: 100%;
+  height: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* фото */
+.heading__title {
+  color: #3d3434;
+  text-align: left;
+  font-family: "Prata", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  width: 600px;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1180px;
+}
+
+.image-text p {
+  color: #382b2b;
+  text-align: left;
+  font-family: "Prata", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  width: 577px;
+}
+
+.catalog-button {
+  padding: 10px 20px;
+  border-radius: 2px;
+  border-style: dashed;
+  border-color: #949292;
+  border-width: 1px;
+  width: 120px;
+  height: 45px;
+  color: #3d3434;
+  text-align: center;
+  font-family: "Prata", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+/* популярные товары заголовок */
+.popular_name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 31px;
+}
+.popular_title {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.line-7 {
+  border-style: solid;
+  border-color: #b0907f;
+  border-width: 1px 0 0 0;
+  width: 440px;
+  height: 0px;
+}
+
+/* карточки товаров */
+
+.card-product {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0px 20px 0px;
+  align-items: center;
+  box-shadow: 0 2px 4px #00000029;
+  border-radius: 5px;
+  flex: 0 0 20%;
+}
+.card-product input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-radius: 0px;
+  border-bottom: none;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-title {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.card-price {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.product-row {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card-btns,
+.btns-actions,
+.count {
+  display: flex;
+}
+
+.card-btns {
+  column-gap: 15px;
+}
+
+.count {
+  border: 1px solid #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.value {
+  text-align: center;
+  max-width: 50px;
+}
+
+.count button,
+.value {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.value {
+  border-inline: 1px solid #000;
+}
+
+.btns-actions {
+  column-gap: 15px;
+  height: 100%;
+}
+
+.btns-actions button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* форма обратной свзяи */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-image: url(/Image/lenta.png);
+}
+
+form.feedback-form .row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+form.feedback-form .col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+form.feedback-form input[type="email"],
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form.feedback-form button {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 281px;
+  height: 42px;
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+select.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #7d7c7c;
+}
+
+form.feedback-form button :hover {
+  background-color: #ff3300;
+}
+
+form.feedback-form img {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/* ПРИКРЕПЛЕНИЕ ФОТО */
+#previewImage img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* согласие на обработку */
+
+label[for="agree"] {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer {
+  background: #ffeee6;
+
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #4c4c4c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+/* порядок оформления */
+
+/* удалить потом */
+.str p {
+  color: #4c4c4c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.str a {
+  color: #4c4c4c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.str {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
