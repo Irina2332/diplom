@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог. Кружки</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- фильтрация -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/catalog.css" />
+    <link rel="stylesheet" href="/style/made_of_wood.css" />
+
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <ul class="header-top__body">
+            <div class="header-wrapper">
+              <li class="header-top__item">
+                <a href="viber://add?number=79245011414" class="header-top__link"
+                  ><img src="./Image/icons/viber-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="header-top__item">
+                <a href="https://wa.me/79245011414" title="Написать WрatsApp" class="header-top__link"
+                  ><img src="./Image/icons/whatsapp-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="header-top__item">
+                <a href="https://www.instagram.com/masterskaya_podarkov75?igsh=MzRlODBiNWFlZA==" class="header-top__link"
+                  ><img src="./Image/icons/instagram-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="header-top__item">
+                <a href="tel:+79245011414" class="header-top__link"
+                  >+ 7 (924) 501 - 14 - 14</a
+                >
+              </li>
+            </div>
+            <div class="header-wrapper">
+              <li class="header-top__item">
+                <a href="./favourites.html" class="header-top__link"
+                  ><img src="./Image/icons/heart-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="header-top__item">
+                <a href="./basket.html" class="header-top__link"
+                  ><img src="./Image/icons/cart-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="header-top__item">
+                <a href="./register.html" class="header-top__link"
+                  ><img src="./Image/icons/profile-icon.svg" alt=""
+                /></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <a href="./index.html" class="header-logo">
+          <img
+            src="./Image/foto_logo.png"
+            alt="Логотип"
+            class="header-logo__img"
+          />
+        </a>
+        <div class="header-bottom">
+          <ul class="header-bottom__body">
+            <div class="header-wrapper header-wrapper-bottom">
+              <li class="header-bottom__item">
+                <a href="#" class="header-bottom__link">г. Чита</a>
+              </li>
+              <li class="header-bottom__item">
+                <a href="./index.html" class="header-bottom__link">Главная</a>
+              </li>
+              <li class="header-bottom__item">
+                <a href="./contact.html" class="header-bottom__link"
+                  >Контакты</a
+                >
+              </li>
+            </div>
+            <div class="header-wrapper header-wrapper-bottom">
+              <li class="header-bottom__item">
+                <a href="./catalog.html" class="header-bottom__link">Каталог</a>
+              </li>
+              <li class="header-bottom__item">
+                <a
+                  href="./delivery_and_payment.html"
+                  class="header-bottom__link"
+                  >Доставка и оплата</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid" style="background: rgba(159, 130, 88, 0.12)">
+        <div class="container">
+          <div class="row">
+            <div class="categor_name">
+              <div class="categor_title">КРУЖКИ</div>
+              <div class="line-7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mt-5 mb-5"
+        style="
+          color: #3d3434;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+        "
+      >
+        <div class="row">
+          <div class="col-lg-3">
+            <h5>Фильтрация по цене</h5>
+            <div class="range-slider mt-3">
+              <input
+                type="range"
+                min="500"
+                max="6000"
+                value="500"
+                step="100"
+                class="form-range"
+                id="priceRange"
+              />
+
+              <p class="mt-3">Цена: <span id="priceValue">500 руб.</span></p>
+            </div>
+            <select id="sort">
+              <option value="default">Порядок: по умолчанию</option>
+              <option value="priceAsc">Цена: по возрастанию</option>
+              <option value="priceDesc">Цена: по убыванию</option>
+              <option value="nameAsc">Название: А-Я</option>
+              <option value="nameDesc">Название: Я-А</option>
+              <option value="newest">Порядок: сперва новые</option>
+              <option value="oldest">Порядок: сперва старые</option>
+            </select>
+            <div class="categories mt-3 mb-5">
+              <h5>КАТЕГОРИИ ТОВАРОВ</h5>
+              <div>
+                <a href="./made_of_wood.html">
+                  <label for="category1">Из дерева</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_nuts.html">
+                  <label for="category2">Из орех</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_berries.html">
+                  <label for="category3">Из ягод</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_fruits.html">
+                  <label for="category4">Из фруктов</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_sweets.html">
+                  <label for="category5">Из сладостей</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_smoked_meats.html">
+                  <label for="category6">Из копченостей</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_chocolate.html">
+                  <label for="category7">Из шоколада</label></a
+                >
+              </div>
+              <div>
+                <a href="./made_of_leather.html">
+                  <label for="category8">Из кожи</label></a
+                >
+              </div>
+              <div>
+                <a href="./with_a_balloon.html">
+                  <label for="category9">С шариком</label></a
+                >
+              </div>
+
+              <div>
+                <a href="./cup.html"> <label for="category10">Кружки</label></a>
+              </div>
+
+              <div>
+                <a href="./for_the_bathhouse.html">
+                  <label for="category11">Для бани</label></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-9" id="products-container">
+            <div class="card-product">
+              <img src="./Image/tovar_1.png" alt="" class="card-img" />
+              <h3 class="card-title">Звезда ореховая</h3>
+
+              <p class="card-price">2000 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_2.png" alt="" class="card-img" />
+              <h3 class="card-title">Букет из сухофр. и восточных сладостей</h3>
+
+              <p class="card-price">2100 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_3.png" alt="" class="card-img" />
+              <h3 class="card-title">Композиция из шоколада и цветов</h3>
+
+              <p class="card-price">2500 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_4.png" alt="" class="card-img" />
+              <h3 class="card-title">Ящик с закуской</h3>
+
+              <p class="card-price">2500 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_5.png" alt="" class="card-img" />
+              <h3 class="card-title">Букет</h3>
+
+              <p class="card-price">2500 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_6.png" alt="" class="card-img" />
+              <h3 class="card-title">Композиции с шаром и цветами</h3>
+
+              <p class="card-price">2500 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_7.png" alt="" class="card-img" />
+              <h3 class="card-title">Календарь 2024</h3>
+
+              <p class="card-price">500 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product">
+              <img src="./Image/tovar_8.png" alt="" class="card-img" />
+              <h3 class="card-title">Кружка “Лучшей классной”</h3>
+
+              <p class="card-price">1400 Р</p>
+              <div class="card-btns">
+                <div class="count">
+                  <button class="minus">-</button>
+                  <input class="value" type="text" value="1" />
+                  <button class="plus">+</button>
+                </div>
+                <div class="btns-actions">
+                  <button><i class="bi bi-basket"></i></button>
+                  <button><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-5">
+      <div class="container px-4">
+        <div class="row">
+          <div class="col">
+            <h4 style="text-align: center">Студия подарков ручной работы</h4>
+            <hr />
+            <ul
+              class="list-unstyled pt-2"
+              style="text-align: center; font-size: 18px"
+            >
+              <li class="py-1">Мажирина Мария Васильевна</li>
+              <li class="py-1">ИНН: 753610420348</li>
+              <li class="py-1">ОГРНИП: 318753600016888</li>
+              <li class="py-1">г. Чита, ул. Костюшко - Григоровича д.44</li>
+              <li class="py-1">Пн-Пт: 11:00-18:00</li>
+              <li class="py-1">Сб,Вс: ВЫХОДНОЙ</li>
+              <li class="py-1">+7 (924) 501 - 14 - 14</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul
+              class="list-unstyled pt-2"
+              style="
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <img src="./Image/foto_logo.png" />
+              <li class="py-1">masterskaya_podarkov75</li>
+              <li class="py-1">mazhirina.masha@mail.ru</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4 style="text-align: center">Информация</h4>
+            <hr />
+            <ul class="list-unstyled pt-2" style="text-align: center">
+              <li class="py-1"><a href="/catalog.html">Каталог</a></li>
+              <li class="py-1"><a href="/contact.html">Контакты</a></li>
+              <li class="py-1">
+                <a href="/delivery_and_payment.html">Доставка и оплата</a>
+              </li>
+              <li class="py-1">Политика конфиденциальности</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- фильтрация -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/filter.js"></script>
+
+    <script src="./js/filters.js"></script>
+  </body>
+</html>
