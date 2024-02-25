@@ -1,0 +1,52 @@
+.categor_name {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  height: 71.27px;
+}
+.categor_title {
+  color: #3d3434;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-products {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0px 20px 0px;
+  align-items: center;
+  flex: 0 0 24%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-products img {
+  pointer-events: none;
+  
+}
+
+.overlay {
+  display: none;
+  bottom: 50px;
+  width: 97.8%;
+  height: 50px;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: all 0.3s ease;
+  position: absolute;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.overlay-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}

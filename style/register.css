@@ -1,0 +1,68 @@
+.form__tittle {
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(156, 156, 156, 0.28);
+    border-width: 1px 0px 0px 0px;
+    width: 554px;
+    height: 655px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .form__text {
+    color: #3d3434;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  form.form__register input[type="name"],
+  input[type="email"],
+  input[type="password"] {
+    background: rgba(217, 217, 217, 0.32);
+    border-radius: 10px;
+    width: 380px;
+    height: 56px;
+    color: #717171;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding-left: 15px;
+  }
+  
+  button.btn.submit {
+    background: rgba(217, 217, 217, 0.32);
+    border-radius: 10px;
+    width: 279px;
+    height: 48px;
+    color: #717171;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-align: center;
+  }
+  
+  .form__register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form__register a {
+    text-decoration: none;
+  }
+  .form__register p {
+    color: #3d3434;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
